@@ -24,3 +24,9 @@ You'll need to create an info.json file and put it somewhere that the script can
 - "logfile": The file to read and write new messages to/from. Be sure it's not world-readable, but that it can be read and written to by index.php.
 - "password": An SHA512 hash of the password you want to use to (semi-)secure your chat.
 - "profiles": A map from GroupMe nicknames to Facebook profile names.
+
+Other setup
+-----------
+
+Depending on your hosting provider, it will be necessary to change the dilenames
+in rhe scripts to reflect where you actually put them.
