@@ -9,8 +9,9 @@ info.json
 The info.json file should have the following format:
 
     {
-        "GroupName": "Our Fun Group!",
-        "LogFile": "log.html",
+        "groupname": "Our Fun Group!",
+        "logfile": "protected/log.php",
+        "password": "blah-SHA512_HASH-of-PASSWORD"
         "profiles": {
             "Alice": "alice",
             "Bob": "bsmith",
