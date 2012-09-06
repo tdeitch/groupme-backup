@@ -1,12 +1,12 @@
 GroupMe Backup
 ==============
 
-This repo provides a PHP program to backup GroupMe using Twilio.
+This repo provides a PHP program to backup GroupMe using Twilio. Get a Twilio phone number, use this script as the SMS app, and add the number to your GroupMe chat. Whenever it gets a message, it'll add it to the log and you'll be able to view it from the web. 
 
 info.json
 ---------
 
-The info.json file should have the following format:
+You'll need to create an info.json file and put it somewhere that the script can read it, but other people can't. It should have the following format:
 
     {
         "groupname": "Our Fun Group!",
@@ -20,4 +20,7 @@ The info.json file should have the following format:
         }
     }
 
-where "profiles" is a map from GroupMe nicknames to Facebook profile names.
+- "groupname": The name you want to call your group. This does not have to be the same as the name in GroupMe.
+- "logfile": The file to read and write new messages to/from. Be sure it's not world-readable, but that it can be read and written to by index.php.
+- "password": An SHA512 hash of the password you want to use to (semi-)secure your chat.
+- "profiles": A map from GroupMe nicknames to Facebook profile names.
