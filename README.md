@@ -28,5 +28,5 @@ You'll need to create an info.json file and put it somewhere that the script can
 Other setup
 -----------
 
-Depending on your hosting provider, it will be necessary to change the dilenames
-in rhe scripts to reflect where you actually put them.
+Depending on your hosting provider, it will be necessary to change the filenames
+in the scripts to reflect where you actually put them.
